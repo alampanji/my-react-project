@@ -9,20 +9,20 @@ const Navbar = ({ menus }) => {
   }
 
   const listMenu = menus.map((menu, index) =>
-  <li className="mr-6 py-6" key={index}>
-    <button
-      className="text-white hover:text-amber-200 hover:cursor-pointer"
-      onClick={() => handleClick(menu.route)}
-    >
-      {menu.label}
-    </button>
-  </li> 
+    <li className="mr-6 py-6" key={index}>
+      <button
+        className="text-white hover:text-amber-200 hover:cursor-pointer"
+        onClick={() => handleClick(menu.route)}
+      >
+        {menu.label}
+      </button>
+    </li> 
   )
   
   return (
     <nav className="bg-gray-900">
         <ul className="flex px-4">
-        {listMenu}
+          {listMenu}
         </ul>
     </nav>
   )
